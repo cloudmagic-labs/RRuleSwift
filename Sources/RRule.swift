@@ -44,6 +44,7 @@ public struct RRule {
             guard ruleComponents.count == 2 else {
                 continue
             }
+			
             let ruleName = ruleComponents[0]
             let ruleValue = ruleComponents[1]
             guard !ruleValue.isEmpty && ruleValue.characters.count > 0 else {
